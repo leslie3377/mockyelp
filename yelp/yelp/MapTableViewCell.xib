@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="17A405" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="MapTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="348" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="quB-V9-yT1">
+                        <frame key="frameInset" minX="30" width="240" height="128"/>
+                    </mapView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="quB-V9-yT1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Hdm-5Z-ejI"/>
+                    <constraint firstItem="quB-V9-yT1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="T0j-xj-sZz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="quB-V9-yT1" secondAttribute="bottom" id="T39-wI-Wpk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="quB-V9-yT1" secondAttribute="trailing" id="p14-GP-UIT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="15" y="-224"/>
+        </tableViewCell>
+    </objects>
+</document>
